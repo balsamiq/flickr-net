@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ShapeDataSL.cs" />
+    <Compile Remove="UnknownResponseSL.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ShapeDataSL.cs" />
+    <None Include="UnknownResponseSL.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>
